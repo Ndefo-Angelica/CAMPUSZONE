@@ -3,6 +3,7 @@ import React from "react";
 const About: React.FC = () => {
     return (
         <section className="about">
+            <div className="about-content">
             <h2>About <span>Campus</span>Zone</h2>
             <p>Who is <span>Campus</span>Zone?</p>
             <p>We empower students with essential resources for academic
@@ -15,6 +16,10 @@ const About: React.FC = () => {
                 is here to support your educational journey. Join our community
                 and take your learning to the next level with us</p>
             <button className="btn">Join our community</button>
+            </div>
+            <div className="about-image">
+                <img src="" alt="About CampusZone"  />
+            </div>
         </section>
     )
 }

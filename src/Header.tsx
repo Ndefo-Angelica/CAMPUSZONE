@@ -5,23 +5,27 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-top">
-        <p>Formation: 14 / 05/24</p>
-        <div className="header-actions">
-          <button className="btn login-btn">Login</button>
-          <button className="btn account-btn">Account</button>
+        <span className="header-date">Formation: 14/05/24</span>
+        <div className="header-buttons">
+          <button className="btn header-btn">Login</button>
+          <button className="btn header-btn">Account</button>
         </div>
       </div>
-      <nav className="navbar">
-        <h1>CampusZone</h1>
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Chat</li>
-          <li>Formations</li>
-          <li>Contacts</li>
-          <li>Account</li>
-        </ul>
-      </nav>
+      <div className="header-bottom">
+        <div className="logo">
+          <img src="./assets/logo.jpeg" alt="CampusZone Logo" />
+          <span className="logo-text">CampusZone</span>
+        </div>
+        <nav className="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Formations</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
