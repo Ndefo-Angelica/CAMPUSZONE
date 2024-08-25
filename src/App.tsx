@@ -5,6 +5,7 @@ import About from "./About.tsx";
 import Services from "./Services.tsx";
 import ContactForm from "./ContactForm.tsx";
 import Footer from "./Footer.tsx";
+import Copyright from "./copyright.tsx";
 
 const App: React.FC = () => {
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
   <Services/>
   <ContactForm/>
   <Footer/>
+  <Copyright/>
   </>)
 }
 
