@@ -1,15 +1,18 @@
 
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="bg-pink-200 py-10">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex flex-col items-center">
-            <h3 className="font-bold text-lg mb-4">Explore</h3>
-            <ul className="space-y-2 text-sm flex flex-col items-center">
-              <li><a href="#" className="hover:text-pink-300">Social Media</a></li>
+            <h3 className="font-bold text-lg mb-2 mr-7">Explore</h3>
+            <ul className="space-y-1 text-sm flex flex-col items-left text-left">
+              <li><a href="#" className="hover:text-pink-300 ">Social</a></li>
               <li><a href="#" className="hover:text-pink-300">Chat Bot</a></li>
               <li><a href="#" className="hover:text-pink-300">Services</a></li>
               <li><a href="#" className="hover:text-pink-300">Courses</a></li>
@@ -17,8 +20,8 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <h3 className="font-bold text-lg mb-4">Our Partners</h3>
-            <ul className="space-y-2 text-sm flex flex-col items-center">
+            <h3 className="font-bold text-lg mb-2">Our Partners</h3>
+            <ul className="space-y-1 text-sm flex flex-col items-left text-left">
               <li><a href="#" className="hover:text-pink-300">ISTAMA</a></li>
               <li><a href="#" className="hover:text-pink-300">ESG</a></li>
               <li><a href="#" className="hover:text-pink-300">IUC</a></li>
@@ -27,9 +30,9 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <h3 className="font-bold text-lg mb-4">Informations</h3>
-            <ul className="space-y-2 text-sm flex flex-col items-center">
-              <li><a href="#" className="hover:text-pink-300">Register</a></li>
+            <h3 className="font-bold text-lg mb-2">Informations</h3>
+            <ul className="space-y-1 text-sm flex flex-col items-left text-left">
+              <li className="hover:text-pink-300 cursor-pointer" onClick={()=> navigate("/Register")}>Register</li>
               <li><a href="#" className="hover:text-pink-300">Login</a></li>
               <li><a href="#" className="hover:text-pink-300">My plans</a></li>
               <li><a href="#" className="hover:text-pink-300">My courses</a></li>
@@ -37,7 +40,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-grow justify-evenly space-x-6 mt-8">
+        <div className="flex flex-grow justify-evenly space-x-6 mt-8 ">
           <a href="https://www.facebook.com/" className="text-white hover:text-pink-300 text-2xl">
             <img src="src/assets/facebook.png" alt="Facebook" className="h-10" />
           </a>

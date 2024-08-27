@@ -1,24 +1,24 @@
 import React from "react";
-import Header from "./Header.tsx";
-import HeroSection from "./HeroSection.tsx"
-import About from "./About.tsx";
-import Services from "./Services.tsx";
-import ContactForm from "./ContactForm.tsx";
-import Footer from "./Footer.tsx";
-import Copyright from "./copyright.tsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Home from "./pages/Home/Home";
+import Register from "./pages/Register/Register"
+
+
 
 const App: React.FC = () => {
 
-  return(
-    <>
-  <Header/>
-  <HeroSection/>
-  <About/>
-  <Services/>
-  <ContactForm/>
-  <Footer/>
-  <Copyright/>
-  </>)
-}
+  return (
+    <Router>
+      <div className="border-solid border-[2px] border-pink-200">
+
+
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Register" element={<Register />}></Route>
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
 export default App;
