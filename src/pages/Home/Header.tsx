@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <nav className="flex-grow flex mb-4 md:mb-0 md:ml-24 text-xs justify-center font-semibold">
             <ul className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
               <li><a href="#" className="hover:text-pink-500">Home</a></li>
-              <li><a href="#" className="hover:text-pink-500">Services</a></li>
+              <li className="hover:text-pink-500" onClick={()=> navigate("/Services")}>Services</li>
               <li><a href="#" className="hover:text-pink-500">Chat</a></li>
               <li><a href="#" className="hover:text-pink-500">Contacts</a></li>
             </ul>
