@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
-import Home from './pages/Home/Home';
-import Services from './pages/Services/Service';
 import Register from './pages/SignupForm/SignupForm';
 import Chats from './pages/Chats/Chats';
 import Contacts from './pages/Contacts/Contacts';
 import Login from './pages/Login/Login';
+import Home from "./pages/Home/Home";
+import Services from "./pages/Services/Index";
 
 
 
