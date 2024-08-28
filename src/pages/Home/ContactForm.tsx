@@ -5,19 +5,19 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const ContactForm: React.FC = () => {
-  
+
   const schema = yup.object().shape({
     name: yup.string().required(),
     school: yup.string().required(),
     email: yup.string().email().required(),
-    comment: yup.string().min(50).required(),
+    comment: yup.string().min(10).required(),
   });
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
     resolver: yupResolver(schema),
   });
 
-  const onSubmitHandler = (data:any) => {
+  const onSubmitHandler = (data: any) => {
     console.log({ data });
     reset();
   };
@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
       <form onSubmit={handleSubmit(onSubmitHandler)}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"> 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
           <div className="flex flex-col space-y-3">
             <input
               type="text"
@@ -73,21 +73,21 @@ const ContactForm: React.FC = () => {
               {...register("name")}
               className="p-4 border-[1px]  border-pink-500 rounded-md focus:outline-none focus:ring-1 focus:ring-pink-500 "
             />
-            <p>{errors.name?.message}</p>
+            <p className="text-red-800">{errors.name?.message}</p>
             <input
               type="text"
               placeholder="School"
               {...register("school")}
               className=" p-4  border-[1px]   mb-4  border-pink-500 rounded-md focus:outline-none focus:ring-1 focus:ring-pink-500"
             />
-            <p>{errors.school?.message}</p>
+            <p className="text-red-800">{errors.school?.message}</p>
             <input
               type="email"
               placeholder="Your Email"
               {...register("email")}
               className="p-4 border-[1px]  mt-4 border-pink-500 rounded-md focus:outline-none focus:ring-1 focus:ring-pink-500 "
             />
-            <p>{errors.email?.message}</p>
+            <p className="text-red-800">{errors.email?.message}</p>
           </div>
 
           <div className="flex flex-col space-y-3">
@@ -96,14 +96,14 @@ const ContactForm: React.FC = () => {
               {...register("comment")}
               className="py-11 px-2  border-[1px]  border-pink-500 rounded-md focus:outline-none focus:ring-1 focus:ring-pink-500 md:col-span-2 h-32"
             ></textarea>
-            <p>{errors.comment?.message}</p>
+            <p className="text-red-800">{errors.comment?.message}</p>
 
             <div className="mt-4 text-center md:text-center">
               <button className="bg-pink-500 text-white py-3 px-40 rounded-lg mt-3 hover:bg-pink-200 transition duration-300">
                 Send your message
               </button>
             </div>
-            
+
           </div>
         </div>
       </form>
