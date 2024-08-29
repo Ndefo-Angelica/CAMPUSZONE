@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Service from './Service';
+import Service from './SystemOfStudy';
 import SystemOfStudy from './SystemOfStudy';
 import Faculties from './Faculties';
 import Departments from './Departments';
