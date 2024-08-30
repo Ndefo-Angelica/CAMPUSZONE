@@ -2,38 +2,31 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Resources: React.FC = () => {
-  const { department } = useParams<{ type: string; faculty: string; department: string }>();
-  const [level, setLevel] = useState<string | null>(null);
+  const { type } = useParams();
+  
 
-  const handleLevelChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setLevel(e.target.value);
-  };
+ 
 
   return (
-    <div>
-      <h1>{department} Resources</h1>
-      <label htmlFor="level">Choose your level:</label>
-      <select id="level" onChange={handleLevelChange}>
-        <option value="">Select Level</option>
-        <option value="100">Level 100</option>
-        <option value="200">Level 200</option>
-        <option value="300">Level 300</option>
-        <option value="400">Level 400</option>
-        <option value="500">Level 500</option>
-      </select>
+    <div className="bg-white p-6 rounded-lg shadow-md">
+  <h1 className="text-3xl font-bold text-gray-800 mb-4">{type} Resources</h1>
+  
+  <h2 className="text-2xl font-semibold text-gray-700 mb-6">Resources for {type}</h2>
+  
+  <ul className="space-y-4">
+    <li className="p-4 bg-pink-100 rounded-lg shadow hover:bg-pink-200 transition-colors duration-300">
+      <a href="#" className="text-pink-600 hover:text-pink-800">Notes</a>
+    </li>
+    <li className="p-4 bg-pink-100 rounded-lg shadow hover:bg-pink-200 transition-colors duration-300">
+      <a href="#" className="text-pink-600 hover:text-pink-800">Past Exam Papers</a>
+    </li>
+    <li className="p-4 bg-pink-100 rounded-lg shadow hover:bg-pink-200 transition-colors duration-300">
+      <a href="#" className="text-pink-600 hover:text-pink-800">Other Learning Materials</a>
+    </li>
+  </ul>
+</div>
 
-      {level && (
-        <div>
-          <h2>Resources for {department}, Level {level}</h2>
-          <ul>
-            <li>Notes</li>
-            <li>Past Exam Papers</li>
-            <li>Other Learning Materials</li>
-          </ul>
-        </div>
-      )}
-    </div>
   );
 }
 
-export default Resources;
+export default Resources; 

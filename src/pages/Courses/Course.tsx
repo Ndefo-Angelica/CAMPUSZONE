@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate, Outlet } from 'react-router-dom';
+import { useParams, useNavigate, } from 'react-router-dom';
+
 
 interface Course {
   id: string;
@@ -19,7 +20,7 @@ const mockCourses: Record<string, Course[]> = {
 };
 
 const Courses: React.FC = () => {
-  const { type, faculty, department } = useParams<{ type: string; faculty: string; department: string }>();
+  const { type } = useParams();
   const [selectedLevel, setSelectedLevel] = useState<string>('');
   const [courses, setCourses] = useState<Course[]>([]);
   const navigate = useNavigate();
@@ -30,13 +31,13 @@ const Courses: React.FC = () => {
     setCourses(mockCourses[level] || []);
   };
 
-  const handleCourseSelect = (courseId: string) => {
-    navigate(`/services/system-of-study/faculties/${type}/departments/${faculty}/courses/${courseId}/resources`);
+  const handleCourseSelect = (courseId: string) => {     
+    navigate(`/resources/${courseId}`);
   };
-
+  
   return (
     <div>
-      <h1>Courses for {department} in {faculty} ({type})</h1>
+      <h1>Courses for  ({type})</h1>
       <label htmlFor="level">Select Your Level:</label>
       <select id="level" value={selectedLevel} onChange={handleLevelChange}>
         <option value="">--Select Level--</option>
@@ -60,7 +61,7 @@ const Courses: React.FC = () => {
         </div>
       )}
       {/* Render nested routes here */}
-      <Outlet />
+   
     </div>
   );
 };
