@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { useNavigate, Link } from "react-router-dom";
 import formationImage from '/src/assets/formation.png';
 import loginImage from '/src/assets/login.png';
 import accountImage from '/src/assets/account.png';
 import logoImage from '/src/assets/logo.png';
-import searchImage from '/src/assets/search.png';
+// import searchImage from '/src/assets/search.png';
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
 
-  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  // const [isSearchVisible, setIsSearchVisible] = useState(false);
 
-  const toggleSearchBar = () => {
-    setIsSearchVisible(!isSearchVisible);
-  };
+  // const toggleSearchBar = () => {
+  //   setIsSearchVisible(!isSearchVisible);
+  // };
 
   return (
     <header className="bg-pink-500 shadow-md">
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           Formation: 14 / 05 / 24
         </span>
         <div className="flex space-x-4">
-          <button  onClick={() => navigate("/login")} className="bg-white hover:bg-pink-300 text-black text-xs py-2 px-2 rounded font-semibold flex items-center">
+          <button onClick={() => navigate("/login")} className="bg-white hover:bg-pink-300 text-black text-xs py-2 px-2 rounded font-semibold flex items-center">
             <img src={loginImage} alt="login" className="h-5 mr-1" />
             Login
           </button>
@@ -45,14 +45,13 @@ const Header: React.FC = () => {
           <nav className="flex-grow flex mb-4 md:mb-0 md:ml-24 text-xs justify-center font-semibold">
             <ul className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
               <li><Link to="/" className="hover:text-pink-500">Home</Link></li>
-              <li><Link to="/SystemOfStudy" className="hover:text-pink-500">Courses</Link></li>
-              <li><Link to="/" className="hover:text-pink-500">Services</Link></li>
-              <li><Link to="/chat" className="hover:text-pink-500">Chat</Link></li>
+              <li><Link to="/services" className="hover:text-pink-500">Services</Link></li>
+              <li><Link to="/chat" className="hover:text-pink-500">ChatBot</Link></li>
               <li><Link to="/contacts" className="hover:text-pink-500">Contacts</Link></li>
             </ul>
           </nav>
 
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <img
               src={searchImage}
               alt="Search"
@@ -71,10 +70,10 @@ const Header: React.FC = () => {
                 </button>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
-      
+
     </header>
   );
 };

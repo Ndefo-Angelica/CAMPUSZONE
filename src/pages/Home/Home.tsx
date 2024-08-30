@@ -3,7 +3,7 @@ import HeroSection from "./HeroSection.tsx"
 import About from "./About.tsx";
 import OurServices from "./OurServices.tsx";
 import ContactForm from "./ContactForm.tsx";
-import Footer from "./Footer.tsx";
+
 
 const Home: React.FC = () => {
 
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <About />
       <OurServices />
       <ContactForm />
-      <Footer />
+      
       
     </div>)
 }
