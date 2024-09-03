@@ -1,10 +1,10 @@
 // import React, { useState } from 'react';
 import { useNavigate, Link } from "react-router-dom";
-import formationImage from '/src/assets/formation.png';
-import loginImage from '/src/assets/login.png';
-import accountImage from '/src/assets/account.png';
-import logoImage from '/src/assets/logo.png';
-// import searchImage from '/src/assets/search.png';
+import formationImage from '/images/formation.png';
+import loginImage from '/images/login.png';
+import accountImage from '/images/account.png';
+import logoImage from '/images/logo.png';
+// import searchImage from '/images/search.png';
 
 const Header: React.FC = () => {
   const navigate = useNavigate();

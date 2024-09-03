@@ -9,7 +9,7 @@ const Login: React.FC = () => {
             <div className="w-full max-w-lg my-10 p-8 bg-pink-200 rounded-lg shadow-lg">
                 <div className="flex justify-center mb-2">
 
-                    <img src="src/assets/CampusZone.png" alt="CampusZone" className="size-20" />
+                    <img src="/images/CampusZone.png" alt="CampusZone" className="size-20" />
                 </div>
                 <h1 className="text-2xl font-semibold text-center text-gray-800">
                     Welcome to <span className="text-pink-400">Campus<span className="text-black">Zone</span></span>

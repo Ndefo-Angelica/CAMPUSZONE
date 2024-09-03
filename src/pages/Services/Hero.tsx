@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     const navigate = useNavigate(); 
 
     return (
-        <section className="relative h-[calc(100vh_-_7rem)] bg-cover bg-center " style={{ backgroundImage: "url('src/assets/Hero.jpg')" }}>
+        <section className="relative h-[calc(100vh_-_7rem)] bg-cover bg-center " style={{ backgroundImage: "url('/images/Hero.jpg')" }}>
             <div className="absolute inset-0 bg-pink-600 opacity-60"></div>
             <div className="relative max-w-4xl mx-auto  py-40">
                 <h1 className="text-5xl font-bold text-white text-justify leading-tight">Study, practice,<br/><p className="px-20">succeed!!!</p></h1>

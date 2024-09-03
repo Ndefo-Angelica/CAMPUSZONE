@@ -8,7 +8,7 @@ const Missions: React.FC = () => {
         <div className="flex justify-center items-center mb-1">
           <div className="h-0.5 w-10 bg-pink-500"></div>
           <span className="mx-2 text-pink-500 text-2xl">
-            <img src="src/assets/logo.png" alt="CampusZone Logo" className="h-5" />
+            <img src="/images/logo.png" alt="CampusZone Logo" className="h-5" />
           </span>
           <div className="h-0.5 w-10 bg-pink-500"></div>
         </div>
@@ -25,7 +25,7 @@ const Missions: React.FC = () => {
             </div>
             <div className="flex justify-center items-center bg-pink-500 rounded-full absolute h-16 w-16 top-5 left-5">
               <div className="flex justify-center items-center bg-white h-[80%] w-[80%] rounded-full">
-                <img src="src/assets/book.png" alt="CampusZone Logo" className="h-[70%] w-[70%]" />
+                <img src="/images/book.png" alt="CampusZone Logo" className="h-[70%] w-[70%]" />
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Missions: React.FC = () => {
             </div>
             <div className="flex justify-center items-center bg-pink-500 rounded-full absolute h-16 w-16 top-5 left-5">
               <div className="flex justify-center items-center bg-white h-[80%] w-[80%] rounded-full">
-                <img src="src/assets/Teacher.png" alt="Collaborate" className="h-[70%] w-[70%]" />
+                <img src="/images/Teacher.png" alt="Collaborate" className="h-[70%] w-[70%]" />
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Missions: React.FC = () => {
             </div>
             <div className="flex justify-center items-center bg-pink-500 rounded-full absolute h-16 w-16 top-5 left-5">
               <div className="flex justify-center items-center bg-white h-[80%] w-[80%] rounded-full">
-                <img src="src/assets/Positive.png" alt="Network" className="h-[70%] w-[70%]" />
+                <img src="/images/Positive.png" alt="Network" className="h-[70%] w-[70%]" />
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Missions: React.FC = () => {
             </div>
             <div className="flex justify-center items-center bg-pink-500 rounded-full absolute h-16 w-16 top-5 left-5">
               <div className="flex justify-center items-center bg-white h-[80%] w-[80%] rounded-full">
-                <img src="src/assets/Medal.png" alt="Innovate" className="h-[70%] w-[70%]" />
+                <img src="/images/Medal.png" alt="Innovate" className="h-[70%] w-[70%]" />
               </div>
             </div>
           </div>

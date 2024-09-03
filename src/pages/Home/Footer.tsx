@@ -43,13 +43,13 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-row space-x-6 pt-5 justify-end content-center px-4">
             <a href="https://www.facebook.com/" className="text-white hover:text-pink-300 text-2xl content-center">
-              <img src="src/assets/facebook.png" alt="Facebook" className="h-8" />
+              <img src="/images/facebook.png" alt="Facebook" className="h-8" />
             </a>
             <a href="https://x.com/" className="text-white hover:text-pink-300 text-2xl content-center">
-              <img src="src/assets/twitter.png" alt="Twitter" className="h-9" />
+              <img src="/images/twitter.png" alt="Twitter" className="h-9" />
             </a>
             <a href="https://www.linkedin.com/" className="text-white hover:text-pink-300 text-2xl content-center">
-              <img src="src/assets/linkedin.png" alt="LinkedIn" className="h-12" />
+              <img src="/images/linkedin.png" alt="LinkedIn" className="h-12" />
             </a>
         </div>
       </div>

@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   return (
     <div
       className="relative h-[calc(100vh_-_6rem)] bg-cover bg-center flex items-center justify-center text-white"
-      style={{ backgroundImage: 'url(src/assets/header.jpg)' }}
+      style={{ backgroundImage: 'url(/images/header.jpg)' }}
     >
       <div className="absolute inset-0 bg-pink-500 opacity-60"></div>
 

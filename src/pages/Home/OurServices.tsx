@@ -15,7 +15,7 @@ const OurServices: React.FC = () => {
             <h2 className="text-3xl font-bold text-center mb-1">Our Services</h2>
             <div className="flex justify-center items-center mb-8">
                 <div className="h-0.5 w-10 bg-pink-500"></div>
-                <span className="mx-2 text-pink-500 text-2xl">   <img src="src/assets/logo.png" alt="CampusZone Logo" className="h-6" /></span>
+                <span className="mx-2 text-pink-500 text-2xl">   <img src="/images/logo.png" alt="CampusZone Logo" className="h-6" /></span>
                 <div className="h-0.5 w-10 bg-pink-500"></div>
             </div>
 
@@ -38,7 +38,7 @@ const OurServices: React.FC = () => {
 
                     <div className="mt-8 lg:mt-0 lg:ml-8 flex-shrink-0">
                         <img
-                            src="src/assets/services.png"
+                            src="/images/services.png"
                             alt="Graduate"
                             className="w-64 lg:w-96"
                         />

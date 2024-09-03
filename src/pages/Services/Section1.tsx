@@ -16,7 +16,7 @@ const Section1: React.FC = () => {
           <div className="h-0.5 w-10 bg-pink-500"></div>
           <span className="mx-2 text-pink-500 text-2xl">
             <img
-              src="src/assets/logo.png"
+              src="/images/logo.png"
               alt="CampusZone Logo"
               className="h-5"
             />
@@ -29,7 +29,7 @@ const Section1: React.FC = () => {
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
                   <img
-                    src="src/assets/Online.png"
+                    src="/images/Online.png"
                     alt="CampusZone Logo"
                     className="h-[70%] w-[70%]"
                   />
@@ -53,7 +53,7 @@ const Section1: React.FC = () => {
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
                   <img
-                    src="src/assets/Exam.png"
+                    src="/images/Exam.png"
                     alt="Past Papers Icon"
                     className="h-[70%] w-[70%]"
                   />
@@ -77,7 +77,7 @@ const Section1: React.FC = () => {
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
                   <img
-                    src="src/assets/Overview.png"
+                    src="/images/Overview.png"
                     alt="Revision Notes Icon"
                     className="h-[70%] w-[70%]"
                   />
@@ -101,7 +101,7 @@ const Section1: React.FC = () => {
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
                   <img
-                    src="src/assets/Classroom.png"
+                    src="/images/Classroom.png"
                     alt="Chatbot Icon"
                     className="h-[70%] w-[70%]"
                   />

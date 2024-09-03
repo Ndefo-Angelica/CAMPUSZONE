@@ -6,7 +6,7 @@ const About: React.FC = () => {
             <div className="flex flex-col lg:flex-row items-end justify-center gap-8">
                 <div className="flex items-end justify-center">
                     <div className="w-fit h-fit flex items-center justify-center lg:-mb-8">
-                        <img className="rounded shadow-lg object-cover w-full lg:w-[25rem] h-full lg:h-[22rem]" src="/src/assets/about.jpg" alt="About CampusZone" />
+                        <img className="rounded shadow-lg object-cover w-full lg:w-[25rem] h-full lg:h-[22rem]" src="/images/about.jpg" alt="About CampusZone" />
                     </div>
                 </div>
 
@@ -19,7 +19,7 @@ const About: React.FC = () => {
                         <div className="flex justify-center items-center mb-5">
                             <div className="h-0.5 w-10 bg-pink-500"></div>
                             <span className="mx-2 text-pink-500 text-2xl">
-                                <img src="src/assets/logo.png" alt="CampusZone Logo" className="h-5" />
+                                <img src="/images/logo.png" alt="CampusZone Logo" className="h-5" />
                             </span>
                             <div className="h-0.5 w-10 bg-pink-500"></div>
                         </div>
@@ -37,8 +37,8 @@ const About: React.FC = () => {
                             </span>
                             {" "}
                             <span className='flex items-center -space-x-3'>
-                                <img src="src/assets/question.png" alt="Question Mark" className="h-6" />
-                                <img src="src/assets/question.png" alt="Question Mark" className="h-6" />
+                                <img src="/images/question.png" alt="Question Mark" className="h-6" />
+                                <img src="/images/question.png" alt="Question Mark" className="h-6" />
                             </span>
                         </div>
 
