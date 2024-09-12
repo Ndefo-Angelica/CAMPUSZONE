@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section2: React.FC = () => {
   return (
-    <section className="p-6">
+    <section className="ml-12 md:ml-24 py-6">
        <h2 className="text-3xl font-semibold text-center text-gray-900 mb-1">
           Why Choose Us
         </h2>
