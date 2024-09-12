@@ -1,9 +1,9 @@
 // import React, { useState } from 'react';
 import { useNavigate, Link } from "react-router-dom";
-import formationImage from '/images/formation.png';
-import loginImage from '/images/login.png';
-import accountImage from '/images/account.png';
-import logoImage from '/images/logo.png';
+import formationImage from "/images/formation.png";
+import loginImage from "/images/login.png";
+import accountImage from "/images/account.png";
+import logoImage from "/images/logo.png";
 // import searchImage from '/images/search.png';
 
 const Header: React.FC = () => {
@@ -16,18 +16,24 @@ const Header: React.FC = () => {
   // };
 
   return (
-    <header className="bg-pink-500 shadow-md">
+    <header className="bg-pink-500 shadow-md ">
       <div className="flex justify-between items-center px-4 py-2">
         <span className="flex items-center text-sm font-semibold text-white">
           <img src={formationImage} alt="formation" className="h-5 mr-2" />
           Formation: 14 / 05 / 24
         </span>
         <div className="flex space-x-4">
-          <button onClick={() => navigate("/login")} className="bg-white hover:bg-pink-300 text-black text-xs py-2 px-2 rounded font-semibold flex items-center">
+          <button
+            onClick={() => navigate("/login")}
+            className="bg-white hover:bg-pink-300 text-black text-xs py-2 px-2 rounded font-semibold flex items-center"
+          >
             <img src={loginImage} alt="login" className="h-5 mr-1" />
             Login
           </button>
-          <button onClick={() => navigate("/register")} className="bg-white hover:bg-pink-300 text-black text-xs py-2 px-2 rounded font-semibold flex items-center">
+          <button
+            onClick={() => navigate("/register")}
+            className="bg-white hover:bg-pink-300 text-black text-xs sm:p-0.5 py-2 px-2 rounded font-semibold flex items-center"
+          >
             <img src={accountImage} alt="register" className="h-5 mr-1" />
             Register
           </button>
@@ -35,21 +41,39 @@ const Header: React.FC = () => {
       </div>
 
       <div className="bg-white w-full flex-grow justify-evenly items-center">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-4 py-2">
+        <div className=" flex flex-row sm:flex-col justify-between pl-4 py-2">
           <div className="flex items-center mb-4 md:mb-0">
             <img src={logoImage} alt="CampusZone Logo" className="h-5" />
             <span className="text-pink-500 text-sm font-bold">Campus</span>
             <span className="text-sm font-bold">Zone</span>
           </div>
-
-          <nav className="flex-grow flex mb-4 md:mb-0 md:ml-24 text-xs justify-center font-semibold">
-            <ul className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
-              <li><Link to="/" className="hover:text-pink-500">Home</Link></li>
-              <li><Link to="/services" className="hover:text-pink-500">Services</Link></li>
-              <li><Link to="/chat" className="hover:text-pink-500">ChatBot</Link></li>
-              <li><Link to="/contacts" className="hover:text-pink-500">Contacts</Link></li>
-            </ul>
-          </nav>
+          <div className="flex flex-row justify-between ">
+              
+            <nav className="flex-grow flex mb-4 md:mb-0 text-xs justify-center font-semibold">
+              <ul className="flex sm:space-x-2 md:flex-row md:space-x-10  md:space-y-0">
+                <li>
+                  <Link to="/" className="hover:text-pink-500">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="hover:text-pink-500">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/chat" className="hover:text-pink-500">
+                    ChatBot
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contacts" className="hover:text-pink-500">
+                    Contacts
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
           {/* <div className="flex items-center">
             <img
@@ -73,7 +97,6 @@ const Header: React.FC = () => {
           </div> */}
         </div>
       </div>
-
     </header>
   );
 };

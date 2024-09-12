@@ -15,13 +15,14 @@ import Services from "./pages/Services/Services"
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router >
       <Routes>
         <Route path="/" element={<Layout />} >
         <Route index element={<Home />} />
        
         <Route path="contacts" element={<Contacts />} />
         <Route path="/services" element={<Services />} />
+        <Route path="chat" element={<Chats />} />
         {/* <Route path="/courses" element={<Courses />} />
         <Route path="/systemofstudy" element={<SystemOfStudy />} />
         <Route path="faculties" element={<Outlet />} />
@@ -34,7 +35,7 @@ const App: React.FC = () => {
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        <Route path="chat" element={<Chats />} />
+      
       </Routes>
     </Router>
 

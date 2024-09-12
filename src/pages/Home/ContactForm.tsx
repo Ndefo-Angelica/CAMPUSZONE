@@ -33,7 +33,7 @@ const ContactForm: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-md shadow-md border-[1px]  border-pink-500">
           <div className="flex items-center mb-4">
-            <div className="text-pink-500"></div>
+          
             <div className=" mt-5 ml-4 flex">
               <img src="/images/address.png" alt="Address Logo" className="h-8 mt-2 flex flex-grow justify-start  bg-pink-500 rounded-full mr-6" />
               <p className="flex flex-grow justify-end">Douala-Cameroun <br></br> Akwa, Direction General Mtn
@@ -44,19 +44,16 @@ const ContactForm: React.FC = () => {
         </div>
         <div className="bg-white p-6 rounded-md shadow-md  border-[1px]  border-pink-500">
           <div className="flex items-center mb-4">
-            <div className="text-pink-500">
-            </div>
-
-
+            
             <div className="ml-4 flex flex-col space-y-3">
               <div className="flex items-center">
                 <img src="/images/contact.png" alt="Contact Logo" className="h-8 mr-4 bg-pink-500 rounded-full" />
-                <p className="flex-grow text-right">+237 6702986317 / 23789126572</p>
+                <p className="">+237 6702986317 / 23789126572</p>
               </div>
 
               <div className="flex items-center">
                 <img src="/images/website.png" alt="Website Logo" className="h-8 mr-4  bg-pink-500 rounded-full" />
-                <p className="flex-grow text-right">https://client@campuszone.com</p>
+                <p className="break-all">https://client@campuszone.com</p>
               </div>
             </div>
 
@@ -99,7 +96,7 @@ const ContactForm: React.FC = () => {
             <p className="text-red-800">{errors.comment?.message}</p>
 
             <div className="mt-4 text-center md:text-center">
-              <button className="bg-pink-500 text-white py-3 px-40 rounded-lg mt-3 hover:bg-pink-200 transition duration-300">
+              <button className="bg-pink-500 text-white py-3 px-[3.7rem] 2xl:px-40 xl:px-40 lg:px-40 rounded-lg mt-3 hover:bg-pink-200 transition duration-300">
                 Send your message
               </button>
             </div>

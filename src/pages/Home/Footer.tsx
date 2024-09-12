@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-pink-200 py-10">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="flex flex-col items-center">
+        <div className="grid grid-cols-3 md:grid-rows-3 gap-6 ">
+          <div className="flex flex-col justify-start">
             <h3 className="font-bold text-lg mb-2 mr-7">Explore</h3>
             <ul className="space-y-1 text-sm flex flex-col items-left text-left">
               <li><a href="#" className="hover:text-pink-300 ">Social</a></li>
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-start">
             <h3 className="font-bold text-lg mb-2">Our Partners</h3>
             <ul className="space-y-1 text-sm flex flex-col items-left text-left">
             <li><Link to="https://istamacameroon.com/" className="hover:text-pink-500">ISTAMA</Link></li>
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-start">
             <h3 className="font-bold text-lg mb-2">Informations</h3>
             <ul className="space-y-1 text-sm flex flex-col items-left text-left">
             <li><Link to="/register" className="hover:text-pink-500">Register</Link></li>
