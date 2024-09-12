@@ -30,7 +30,7 @@ const Contacts: React.FC = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="pt-20 w-full max-w-lg my-10 p-8 ml-20 rounded-lg shadow-lg border">
+          <div className="pt-20 w-full w-full md:max-w-lg my-10 p-8 md:ml-20 rounded-lg shadow-lg border">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Contact Information</h3>
             <p className="text-gray-600 mb-4">
               You can reach us through the following means:
@@ -42,7 +42,7 @@ const Contacts: React.FC = () => {
             </ul>
           </div>
           <div className="bg-pink-300 w-full mr-40 max-w-lg my-10 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 pl-40">Contact Form</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 md:pl-40">Contact Form</h3>
             <Formik
               initialValues={{ name: '', email: '', school: '', message: '' }}
               validationSchema={validationSchema}

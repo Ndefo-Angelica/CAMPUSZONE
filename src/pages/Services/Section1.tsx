@@ -8,7 +8,7 @@ const Section1: React.FC = () => {
 
   return (
     <section className="py-12 ">
-      <div className="max-w-7xl mx-autolg:px-8">
+      <div className="max-w-7xl">
         <h2 className="text-3xl font-semibold text-center text-gray-900 mb-1">
           Our Services
         </h2>
@@ -23,8 +23,8 @@ const Section1: React.FC = () => {
           </span>
           <div className="h-0.5 w-10 bg-pink-500"></div>
         </div>
-        <div className=" bg-pink-100 grid grid-cols-1 sm:grid-cols-2 gap-6  w-screen">
-          <div className="py-4 pl-20 ml-20 flex flex-col text-left mt-3">
+        <div className=" bg-pink-100 grid grid-cols-1 sm:grid-cols-2 gap-6 w-screen">
+          <div className="py-4 px-8 mx-8 flex flex-col text-left mt-3">
             <div className="flex items-center">
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
@@ -48,7 +48,7 @@ const Section1: React.FC = () => {
             </p>
           </div>
 
-          <div className="py-4 pl-20 ml-20 flex flex-col text-left mt-3">
+          <div className="py-4 px-8 mx-8 flex flex-col text-left mt-3">
             <div className="flex items-center">
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
@@ -72,7 +72,7 @@ const Section1: React.FC = () => {
             </p>
           </div>
 
-          <div className="py-4 pl-20 ml-20 flex flex-col text-left mt-10">
+          <div className="py-4 px-8 mx-8 flex flex-col text-left pb-14">
             <div className="flex items-center">
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">
@@ -96,7 +96,7 @@ const Section1: React.FC = () => {
             </p>
           </div>
 
-          <div className="py-4 pl-20 ml-20  flex flex-col text-left mt-10">
+          <div className="py-4 px-8 mx-8 flex flex-col text-left pb-14">
             <div className="flex items-center">
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
                 <div className="flex justify-center items-center bg-pink-500 h-[80%] w-[80%] rounded-full">

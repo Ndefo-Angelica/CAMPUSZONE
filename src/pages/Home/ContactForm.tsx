@@ -24,8 +24,8 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto py-12 px-4 mt-1 ">
-      <h2 className="text-2xl font-bold text-left mb-0">Contact With Us</h2>
-      <div className="flex justify-left items-center mb-8">
+      <h2 className="text-2xl font-bold text-center mb-0">Contact Us</h2>
+      <div className="flex justify-center items-center mb-8">
         <div className="h-0.5 w-10 bg-pink-500"></div>
         <span className="mx-2 text-pink-500 text-2xl"><img src="/images/logo.png" alt="CampusZone Logo" className="h-5" /></span>
         <div className="h-0.5 w-10 bg-pink-500"></div>
@@ -96,7 +96,11 @@ const ContactForm: React.FC = () => {
             <p className="text-red-800">{errors.comment?.message}</p>
 
             <div className="mt-4 text-center md:text-center">
+<<<<<<< HEAD
               <button className="bg-pink-500 text-white py-3 px-[3.7rem] 2xl:px-40 xl:px-40 lg:px-40 rounded-lg mt-3 hover:bg-pink-200 transition duration-300">
+=======
+              <button className="bg-pink-500 text-white py-3 px-20 lg:px-40  xl:px-40 rounded-lg mt-3 hover:bg-pink-200 transition duration-300">
+>>>>>>> ece5115b1c6ac3eabc426b85e1a788424f4fb364
                 Send your message
               </button>
             </div>
