@@ -9,10 +9,10 @@ const Section1: React.FC = () => {
   return (
     <section className="py-12 ">
       <div className="max-w-7xl">
-        <h2 className="text-3xl font-semibold text-center text-gray-900 mb-1">
+        <h2 className="text-3xl font-semibold text-center md:pl-72 text-gray-900 mb-1">
           Our Services
         </h2>
-        <div className="flex justify-center items-center mb-12">
+        <div className="flex items-center justify-center md:pl-72 mb-12">
           <div className="h-0.5 w-10 bg-pink-500"></div>
           <span className="mx-2 text-pink-500 text-2xl">
             <img
@@ -23,7 +23,7 @@ const Section1: React.FC = () => {
           </span>
           <div className="h-0.5 w-10 bg-pink-500"></div>
         </div>
-        <div className=" bg-pink-100 grid grid-cols-1 sm:grid-cols-2 gap-6 w-screen">
+        <div className=" bg-pink-100 grid grid-cols-1 flex justify-items-center sm:grid-cols-2 gap-6 w-screen">
           <div className="py-4 px-8 mx-8 flex flex-col text-left mt-3">
             <div className="flex items-center">
               <div className="flex justify-center items-center rounded-full bg-white h-12 w-12">
